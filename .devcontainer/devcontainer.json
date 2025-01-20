@@ -1,19 +1,29 @@
 {
     "name": "Java Basic",
-    "image": "eclipse-temurin:17-jdk",
-	"features": {
-        "ghcr.io/devcontainers/features/git:1": {}
+    "image": "mcr.microsoft.com/devcontainers/java:17",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest"
+        }
     },
     "customizations": {
         "vscode": {
             "extensions": [
-                "vscjava.vscode-java-pack"
+                "vscjava.vscode-java-pack",
+                "formulahendry.code-runner"
             ],
             "settings": {
                 "java.project.sourcePaths": ["src"],
                 "java.project.outputPath": "bin",
-				"java.server.launchMode": "Standard"
+                "java.server.launchMode": "Standard",
+                "java.imports.gradle.wrapper.enabled": false,
+                "java.configuration.runtimes": [{
+                    "name": "JavaSE-17",
+                    "path": "/usr/local/sdkman/candidates/java/current"
+                }]
             }
         }
-    }
+    },
+    "waitFor": "updateContentCommand",
+    "updateContentCommand": "java --version"
 }
