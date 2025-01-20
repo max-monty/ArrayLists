@@ -10,6 +10,6 @@
     "code-runner.saveFileBeforeRun": true,
     "code-runner.preserveFocus": false,
     "code-runner.executorMap": {
-        "java": "clear && echo '\\033[1;36m=== Running Program ===\\033[0m' && echo '' && cd $workspaceRoot && javac -d bin src/**/*.java >/dev/null 2>&1 && java -cp bin $(echo $fullFileName | sed 's/.*src\\///' | sed 's/.java$//' | sed 's/\\//./g') && echo ''"
+        "java": "clear && echo '=== Running Program ===' && echo '' && cd $workspaceRoot && javac -d bin src/**/*.java >/dev/null 2>&1 && java -cp bin $(echo $fullFileName | sed 's/.*src\\///' | sed 's/.java$//' | sed 's/\\//./g') && echo ''"
     }
 }
