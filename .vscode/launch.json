@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "WrapperPractice",
+            "request": "launch",
+            "mainClass": "WrapperClasses.exercises.WrapperPractice",
+            "projectName": "ArrayLists_b75115c8"
+        },
+        {
+            "type": "java",
             "name": "ArrayListMethods",
             "request": "launch",
             "mainClass": "ArrayListMethods.ArrayListMethods",
