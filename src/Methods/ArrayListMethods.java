@@ -1,4 +1,4 @@
-package ArrayListMethods;
+package Methods;
 import java.util.ArrayList;
 
 public class ArrayListMethods
